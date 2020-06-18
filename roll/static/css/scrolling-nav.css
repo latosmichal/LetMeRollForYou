@@ -3,14 +3,22 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
+
 header {
   padding: 156px 0 100px;  
+}
+header h1
+{
+  color: darkorange;
+  text-shadow: black 3px 3px 3px;
 }
 
 section {
   padding: 150px 0;
+  
 }
 .bg-primary{  
   background: url('../images/dice.jpg') 10% no-repeat fixed;
+  background-color: wheat!important;
   
 }
