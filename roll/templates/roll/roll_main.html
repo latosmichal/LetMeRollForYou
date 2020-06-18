@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Scrolling Nav - Start Bootstrap Template</title>
+  <title>Let Me Roll For You</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -47,8 +47,8 @@
   <header class="bg-primary text-white roll">
     <div class="container text-center">
       <h1>Just try me!</h1>
-      <p class="lead"><input readonly></p>
-      <button type="button" class="btn btn-danger">Roll!</button>
+      <p class="lead"><input readonly class="roller" value="{{roll}}"></p>
+      <button type="button" class="btn btn-danger" name="RollIt"><a href="{% url 'get_roll'%}">Roll!</a></button>
     </div>
   </header>
 
