@@ -3,13 +3,13 @@ import json
 import requests
 
 
-def get_roll_from_random(k=6):
+def get_roll_from_random(k=6, n=1):
     req = {
         "jsonrpc": "2.0",
         "method": "generateIntegers",
         "params": {
-            "apiKey": "",
-            "n": 2,
+            "apiKey": "ed4f8294-a9d9-431b-9bd8-233e086753fb",
+            "n": n,
             "min": 1,
             "max": k,
             "replacement": True
