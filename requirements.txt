@@ -1,2 +1,7 @@
 Django==3.0.7
 requests
+
+# for testing:
+coverage
+bs4
+parameterized
