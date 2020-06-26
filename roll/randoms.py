@@ -22,11 +22,18 @@ def get_roll_from_random(k=6, n=1):
         'Content-type': 'application/json',
     }
 
-    r = requests.post(
+    response = requests.post(
         'https://api.random.org/json-rpc/2/invoke', 
         headers=headers,
         data=json_req
         )
-    j = r.json()
+    json_response = response.json()
 
-    return j['result']['random']['data']
+    try:
+        result = json_response['result']['random']['data']
+    except KeyError:
+        message = json_response['error']['message']
+        raise ResourceWarning(message)
+        result = None
+
+    return result
