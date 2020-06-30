@@ -1,7 +1,10 @@
 import json
-
 import requests
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 random_token = os.getenv('RANDOM_TOKEN')
 
 def get_roll_from_random(k=6, n=1):
