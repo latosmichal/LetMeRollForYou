@@ -12,7 +12,51 @@ header h1
   color: darkorange;
   text-shadow: black 3px 3px 3px;
 }
-
+.dice
+{  
+  color:white;
+  font-weight: 500;
+  text-shadow:black 2px 2px 5px;
+  text-decoration: dashed;
+  width: 60px;
+  height: 60px;
+  padding-top: 55px;
+}
+.dice4
+{
+  background: url('../images/k4.PNG') no-repeat;
+  background-size: cover;
+}
+.dice6
+{
+  background: url('../images/k6.PNG') no-repeat;
+  background-size: cover;
+}
+.dice8
+{
+  background: url('../images/k8.PNG') no-repeat; 
+  background-size: cover;
+}
+.dice10
+{
+  background: url('../images/k10.PNG') no-repeat; 
+  background-size: cover;
+}
+.dice12
+{
+  background: url('../images/k12.PNG') no-repeat; 
+  background-size: cover;
+}
+.dice20
+{
+  background: url('../images/k20.PNG') no-repeat; 
+  background-size: cover;
+}
+.dice100
+{
+  background: url('../images/k100.PNG') no-repeat; 
+  background-size: cover;
+}
 section {
   padding: 150px 0;
   

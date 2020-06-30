@@ -1,5 +1,6 @@
 Django==3.0.7
 requests
+python-dotenv
 
 # for testing:
 coverage

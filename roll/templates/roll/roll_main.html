@@ -50,12 +50,13 @@
       <h1>Just try me!</h1>
       <p class="lead"><input readonly class="roller" value="{{roll}}"></p>
       <form method="GET" action="{% url 'roll_main'%}">
-        <button type="submit" value=4 class="btn btn-danger" name="k">K4</button>
-        <button type="submit" value=6 class="btn btn-danger" name="k">K6</button>
-        <button type="submit" value=8 class="btn btn-danger" name="k">K8</button>
-        <button type="submit" value=10 class="btn btn-danger" name="k">K10</button>
-        <button type="submit" value=12 class="btn btn-danger" name="k">K12</button>
-        <button type="submit" value=20 class="btn btn-danger" name="k">K20</button>
+        <button class='dice dice4' type="submit" value=4 class="btn btn-danger" name="k">K4</button>
+        <button class='dice dice6' type="submit" value=6 class="btn btn-danger" name="k">K6</button>
+        <button class='dice dice8' type="submit" value=8 class="btn btn-danger" name="k">K8</button>
+        <button class='dice dice10' type="submit" value=10 class="btn btn-danger" name="k">K10</button>
+        <button class='dice dice12' type="submit" value=12 class="btn btn-danger" name="k">K12</button>
+        <button class='dice dice20' type="submit" value=20 class="btn btn-danger" name="k">K20</button>
+        <button class='dice dice100' type="submit" value=100 class="btn btn-danger" name="k">K100</button>
       </form>
     </div>
   </header>
