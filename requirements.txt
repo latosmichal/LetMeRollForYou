@@ -3,6 +3,7 @@ requests
 python-dotenv
 gunicorn
 django_heroku
+whitenoise
 # for testing:
 coverage
 bs4
