@@ -26,10 +26,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 if (os.getenv('DEBUG') == 'True'):
     DEBUG = True
-    ALLOWED_HOSTS = ['www.letmerollforyou.herokuapp.com', '*']
+
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 else:
     DEBUG = False
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+    ALLOWED_HOSTS = ['www.letmerollforyou.herokuapp.com']
 
 
 # Application definition
