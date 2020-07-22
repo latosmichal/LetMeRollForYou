@@ -1,9 +1,7 @@
 import json
 import requests
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
 
 random_token = os.getenv('RANDOM_TOKEN')
 
