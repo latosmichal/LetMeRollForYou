@@ -28,5 +28,6 @@ jobs:
     - name: Run Tests
       env: 
         RANDOM_TOKEN: ${{secrets.RANDOM_TOKEN}}
+        SECRET_KEY: ${{secrets.SECRET_KEY}}
       run: |
         python manage.py test

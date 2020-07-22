@@ -16,12 +16,3 @@ def roll_main(request):
 
     # co jak post?    
     return HttpResponseNotAllowed('GET')
-        
-        
-
-
-def get_roll(request):    
-    roll = random.randint(1,6)
-    context = {}
-    context['roll'] = roll
-    return render(request, 'roll/roll_main.html', context)

@@ -20,7 +20,7 @@ class Roll_tests(TestCase):
 
         self.assertEqual(resp.status_code, 405)
 
-    @parameterized.expand([(i, ) for i in [2, 6, 8, 20]])
+    @parameterized.expand([(i, ) for i in [1, 2, 6, 8, 20]])
     def test_rolled_view(self, k):
         url = reverse('roll_main')
         data = {'k': k}
