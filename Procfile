@@ -1,1 +1,1 @@
-web: gunicorn LetMeRollForYou.wsgi
+web: python manage.py collectstatic --no-input; gunicorn LetMeRollForYou.wsgi
