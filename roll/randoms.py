@@ -6,6 +6,9 @@ import os
 random_token = os.getenv('RANDOM_TOKEN')
 
 def get_roll_from_random(k=6, n=1):
+    if int(k)==1:
+        return [1]*n
+
     req = {
         "jsonrpc": "2.0",
         "method": "generateIntegers",
@@ -35,7 +38,7 @@ def get_roll_from_random(k=6, n=1):
         result = json_response['result']['random']['data']
     except KeyError:
         message = json_response['error']['message']
-        raise ResourceWarning(message)
+        raise ResourceWarning('API error: {}'.format(message))
         result = None
 
     return result
