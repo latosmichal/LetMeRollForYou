@@ -30,7 +30,7 @@ if (os.getenv('DEBUG') == 'True'):
     ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 else:
     DEBUG = False
-    ALLOWED_HOSTS = ['www.letmerollforyou.herokuapp.com']
+    ALLOWED_HOSTS = ['letmerollforyou.herokuapp.com']
 
 
 # Application definition
