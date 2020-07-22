@@ -1,1 +1,1 @@
-web: gunicorn LetMeRollForYou.wsgi --log-file
+web: gunicorn LetMeRollForYou.wsgi
