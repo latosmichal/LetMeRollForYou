@@ -2,7 +2,7 @@ Django==3.0.7
 requests
 python-dotenv
 gunicorn
-
+whitenoise
 # for testing:
 coverage
 bs4
